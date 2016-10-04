@@ -1,2 +1,4 @@
-# francesca
-NAME.com Personal Template
+Notes
+=========
+
+BaseKit V8 Template

@@ -1,0 +1,335 @@
+// --------------------------------
+// BaseKit Baseplate Theme (v1.0)
+// --------------------------------
+
+// -----------------------------
+// #Table of Contents
+// -----------------------------
+
+// 1. #LESS INCLUDES
+// 2. #PAGE SETTINGS
+// 3. #TEMPLATE STYLES
+// 4. #VARIABLES
+
+
+
+
+// -----------------------------
+// 1. #LESS Includes
+// -----------------------------
+
+@import "@{templateCommon}/bk-less-framework-v8.less"; // BaseKit LESS Framework
+// @import "@{templateLocal}/bk-v8-test.less";
+@import "@{templateLocal}/less/variables.less";
+
+// Template Includes
+@import "@{templateLocal}/less/typography.less"; // Theme
+@import "@{templateLocal}/less/theme.less"; // Theme
+@import "@{templateLocal}/less/widgets.less"; // Widgets
+@import "@{templateLocal}/less/mixins.less"; // Mixins
+@import "@{templateLocal}/less/navigation.less"; // Navigation
+
+
+// Plugin Includes
+@import "@{templateLocal}/less/plugins/plugin-blog.less"; // Plugin: Blog CSS
+@import "@{templateLocal}/less/plugins/plugin-menu.less"; // Plugin: Menu CSS
+@import "@{templateLocal}/less/plugins/plugin-ecommerce.less"; // Plugin: Ecommerce CSS
+
+
+
+
+// -----------------------------
+// 2. #Page Settings **
+// -----------------------------
+
+
+// Body
+// --------------
+
+body {
+    background-color: @color__body--background;
+}
+
+// Page Container
+// --------------
+
+.container {
+	margin: 0 auto;
+    padding: 30px 80px;
+    @media @tablet {
+        padding: 30px;
+    }
+    @media @mobile {
+        padding: 20px;
+    }
+}
+
+// Feature tpl-hidden
+// --------------
+
+.feature {
+    width: 55%;
+    position: fixed;
+
+    @media @tablet {
+        width: 100%;
+        position: relative;
+    }
+}
+
+.widget[data-widget-type="feature"] {
+    .widget-overlay {
+        width: 35% !important;
+        height: 100vh!important;
+        position: fixed!important;
+        @media @tablet {
+            position: absolute!important;
+            width: 100%!important;
+            height: 100%!important;
+        }
+    }
+}
+
+// Right Section
+// --------------
+
+.right-section {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    width: 45%;
+    margin-left: 55%;
+    height: 100vh;
+    @media @tablet {
+        width: 100%;
+        margin-left: 0;
+    }
+    @media @tablet {
+        display: block;
+        background-color: #f2f2f2;
+        height: inherit;
+    }
+}
+
+
+// Right Section Content
+// ---------------------
+
+.headline-container {
+    h2 {
+        font-family: @font__h4--font-family;
+        font-size: @font__h4--font-size;
+        color: @color__h4--text;
+    }
+}
+
+.profile__companydescription {
+    h3 {
+        color: @color__p--text;
+        font-size: @font__p--font-size;
+        font-family: @font__p--font-family;
+    }
+}
+
+.socialicons-container {
+    margin: 20px 0;
+}
+
+.button-container {
+    margin: 40px 0;
+}
+
+
+// bk-tpl-hidden
+// --------------
+
+
+.widget[data-widget-type="feature"].bk-tpl-hidden + .right-section {
+    width: 100%;
+    margin-left: 0;
+    margin: 0px auto;
+    padding: 20px 20%;
+    @media @tablet {
+        padding: 20px 4%;
+        margin: 0;
+    }
+}
+
+.widget[data-widget-type="feature"].bk-tpl-hidden + .feature-footer {
+    display: none;
+}
+
+
+
+// #Default Page Sticky Footer
+// ------------------------------------------
+
+.navigation-container, 
+.logo-container, 
+.companyname-container {
+    vertical-align: middle;
+    display: inline-block;
+    @media @tablet {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+
+
+// -----------------------------
+// 3. #Template Styles
+// -----------------------------
+
+// Header
+// .header-container {
+//     padding-top: 10px;
+//     width: 60%;
+//     position: relative;
+//     margin-left: 40%;
+//     box-sizing: border-box;
+//     height: 100%;
+
+//     @media screen and (max-width: 1024px) {
+//         width: 100%;
+//         margin-left: 0;
+//     }
+// }
+
+.header-container {
+    width: 100%;
+}
+
+// Bk-pt-default
+
+.bk-pt-default .container {
+    width: 60%;
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
+}
+
+.template-content {
+	width: 100%;
+	margin: 0px auto;
+
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+	@media @tablet {
+		position: relative;
+        top: -100px;
+        background-color: @color__body--background;
+        padding: 20px;
+	}
+}
+
+.widget--zone-widget {
+    margin: 0 0 10px;
+}
+
+// Footer
+.template-footer {
+    .profile-widget-container {
+        text-align: left;
+        .widget-profile-one {
+            margin-bottom: 20px;
+        }
+    }
+    p, a, h1, h2, h3, h4, .social-social-link  {
+        color: @font-swatch1-color!important;
+    }
+    .twitter__avatar {
+        display: none;
+    }
+    .twitter__tweet-item {
+        border: 0;
+        padding: 0;
+    }
+    .signupform__form,
+    .signupform__legend {
+        background-color: transparent;
+    }
+    .signupform__legend {
+        text-align: center;
+        color: @font-swatch9-color;
+        padding-bottom: 10px;
+        &:before {
+            border-bottom: 4px solid @color-swatch1;
+        }
+    }
+    .signupform__form-group {
+        margin-bottom: 0;
+    }
+    .twitter__timestamp,
+    .twitter-feed__via {
+        color: @color-swatch2;
+    }
+    .social-social-link {
+        padding: 0px 12px;
+    }
+    .signupform__form-group:nth-child(1) {
+        @media @tablet {
+            vertical-align: middle;
+            margin-top: 0;
+            float: initial;
+        }
+        @media @mobile {
+            width: 100%;
+            vertical-align: top;
+        }
+    }
+    .signupform__form-group:nth-child(2) { 
+        @media @tablet {
+            vertical-align: middle;
+            margin-top: 0;
+            float: initial;
+            margin-left: -6px;
+        }
+        @media @mobile {
+            margin-left: -4px;
+            width: 100%;
+            vertical-align: initial;
+        }
+    }
+    .signupform__button {
+        color: #ffffff;
+        &:hover {
+            border: 1px solid transparent;
+        }
+        @media @mobile {
+            padding: 0 25px!important;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        position: relative;
+        width: 100%;
+        p, a, h1, h2, h3, h4, .social-social-link  {
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+    }
+}
