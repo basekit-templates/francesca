@@ -212,10 +212,6 @@
         "forms": {
             "color__form-legend--text": "@font-swatch4-color",
             "color__form-label--text": "@color-swatch4"
-        },
-        "blog": {
-            "color__blogpostlist-title--text": "@color-swatch4",
-            "color__blogpost-title--text": "@color-swatch4"
         }
     }
 }

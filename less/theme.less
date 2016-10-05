@@ -128,8 +128,7 @@ form, .form {
 }
 
 .signupform__input,
-.signupform__input,
-.blogsearch__input {
+.signupform__input {
     border: 1px solid @color-swatch7!important;
     border-radius: 20px;
     padding: 10px;
@@ -204,24 +203,11 @@ textarea,
     border-radius: 5px;
 }
 
-.signupform__label,
-.blogsearch__legend {
+.signupform__label {
     background-color: transparent;
     border-bottom: 0;
     font-size: @font__h3--font-size;
     font-weight: @font__h3--font-weight;
-}
-
-.blogsearch__legend {
-    margin-bottom: 0;
-    @media @mobile {
-        padding-bottom: 20px;
-        text-align: center;
-        margin: 5px auto;
-        &:before {
-            margin-top: 35px;
-        }
-    }
 }
 
 .legend {
@@ -354,8 +340,7 @@ textarea,
 // -----------------------------
 
 button,
-.button,
-.blogpostlist__read-more {
+.button {
     padding: 8px 26px;
     background-color: @color__button--background;
     color: @color__button--text;
@@ -373,7 +358,6 @@ button,
 button:hover, 
 .button:hover, 
 .socialicons__social-item a:hover,
-.blogpostlist__read-more:hover,
 .socialicons__social-item:hover {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
