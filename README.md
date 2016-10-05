@@ -1,4 +1,4 @@
-Francesca
+Notes
 =========
 
-NAME.COM V8 Template
+BaseKit V8 Template
