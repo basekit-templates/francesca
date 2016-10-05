@@ -42,39 +42,6 @@
 
 
 
-
-// -----------------------------
-// 2. #Typography
-// -----------------------------
-
-// Colour Swatches
-// ---------------
-
-// @color-swatch1: Background
-// @color-swatch2: Contrast
-// @color-swatch3: Buttons
-// @color-swatch4: Headings
-// @color-swatch5: Paragraph
-// @color-swatch6: Navigation Links
-// @color-swatch7: Spare
-
-
-// Font Swatches
-// -------------
-
-// font1:  Heading 1
-// font2:  Heading 2
-// font3:  Heading 3
-// font4:  Heading 4
-// font5:  Paragraph
-// font6:  Navigation Link
-// font7:  Buttons
-// font8:  Feature Headline
-// font9:  Feature Strapline
-// font10: Company Name (Logo)
-
-
-
 // -----------------------------
 // 3. #Forms
 // -----------------------------
@@ -252,10 +219,6 @@ textarea,
     .clearfix
 }
 
-.responsivecolumns .signupform__legend {
-    float: initial;
-}
-
 .signupform__legend {
     @media @mobile {
         padding-bottom: 10px;
@@ -351,43 +314,6 @@ textarea,
     }
 }
 
-// Responsive Columns Signup
-// -------------------------
-
-.responsivecolumns .signupform__legend {
-    @media @tablet {
-        text-align: left;
-    }
-}
-
-.responsivecolumns .signupform__form-body {
-    @media @tablet {
-        display: block;
-    }
-}
-
-.responsivecolumns .signupform__form-group:nth-child(1) {
-    @media @tablet {
-        width: 100%;
-        margin-bottom: 0;
-    }
-}
-
-.responsivecolumns .signupform__form-group:nth-child(2) {
-    @media @tablet {
-        width: 100%;
-    }
-}
-
-.responsivecolumns {
-    .signupform__button, .blogsearch__button, .ecomproductslist__button:not(.button--pagination) {
-        @media @tablet {
-            border: 1px solid @color-swatch7!important;
-            border-radius: 20px!important;
-        }
-    }
-}
-
 .signupform__button {
     @media @mobile {
         border: 1px solid @color-swatch7!important;
@@ -420,22 +346,17 @@ button,
 
 
 // -----------------------------
-// 5. #Images
+// Button Transitions
 // -----------------------------
 
-// Image Captions
-// --------------
-
-// Gallery & Slideshow
-.image-title,
-.image-description {
-	color: @color-swatch1;
-}
-
-// Image Widget
-.image-widget__caption { margin: 10px 0; }
-.image-widget__image-title,
-.image-widget__image-description {
-	color: @font-swatch5-color;
-	text-shadow: none;
+button:hover, 
+.button:hover, 
+.socialicons__social-item a:hover,
+.blogpostlist__read-more:hover,
+.socialicons__social-item:hover {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
