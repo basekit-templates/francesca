@@ -6,8 +6,7 @@
     "templateType":"standard",
     "widgetVersion":2,
     "images":[
-        "images/feature-bg.jpg",
-        "images/logo.png"
+        "images/feature-bg.jpg"
     ],
     "colorSwatches":
     {
@@ -204,13 +203,7 @@
             "font__button--letter-spacing" : "@font-swatch7-letter-spacing"
         },
         "feature": {
-            "color__feature-content--background" : "@color-swatch2",
-            "color__feature-headline--text": "@font-swatch8-color",
-            "color__feature-strapline--text": "@font-swatch9-color",
-            "color__feature-button--text": "@font-swatch9-color",
-            "color__feature-button--background": "transparent",
-            "color__feature-button--background--hover": "@color__primary",
-            "color__feature-button--border": "@font-swatch9-color",
+            "color__feature-content--background" : "#000",
             "font__feature-headline--font-family" : "@font-swatch8-font-family",
             "font__feature-headline--font-size" : "@font-swatch8-font-size",
             "font__feature-headline--font-weight" : "@font-swatch8-font-weight",
