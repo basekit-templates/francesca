@@ -1,12 +1,11 @@
 {
-    "name":"Notes",
+    "name":"Francesca",
     "thumbnail":"notes.png",
     "screenshot":"notes-screenshot.jpg",
     "pageTypes":["home"],
     "templateType":"standard",
     "widgetVersion":2,
     "images":[
-        "images/image-1.jpg",
         "images/feature-bg.jpg",
         "images/logo.png"
     ],
