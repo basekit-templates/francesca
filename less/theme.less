@@ -2,11 +2,9 @@
 // Notes: CSS > Template Theme
 // ---------------------------------
 
-// 1. #HEADER & FOOTER
-// 2. #TYPOGRAPHY
+// 1. #FOOTER
 // 3. #FORMS
 // 4. #BUTTONS
-// 5. #IMAGES
 
 
 // -----------------------------
@@ -24,15 +22,74 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-	// Change heading elements to white
-	h1, h2, h3, h4 {
-		color: @font-swatch1-color;
-	}
-	// Lighten paragraph & link elements
-	p, a {
-		color: @font-swatch1-color;
-		padding: 0;
-	}
+
+        .profile-widget-container {
+        text-align: left;
+    }
+    p, a, h1, h2, h3, h4, .social-social-link  {
+        color: @font-swatch1-color!important;
+    }
+    .twitter__avatar {
+        display: none;
+    }
+    .twitter__tweet-item {
+        border: 0;
+        padding: 0;
+    }
+    .signupform__form,
+    .signupform__legend {
+        background-color: transparent;
+    }
+    .signupform__legend {
+        padding-bottom: 10px;
+        &:before {
+            border-bottom: 4px solid @color-swatch1;
+        }
+    }
+    .signupform__form-group {
+        margin-bottom: 0;
+    }
+    .twitter__timestamp,
+    .twitter-feed__via {
+        color: @color-swatch2;
+    }
+    .social-social-link {
+        padding: 0px 12px;
+    }
+    .signupform__form-group:nth-child(1) {
+        @media @tablet {
+            vertical-align: middle;
+            margin-top: 0;
+            float: initial;
+        }
+        @media @mobile {
+            width: 100%;
+            vertical-align: top;
+        }
+    }
+    .signupform__form-group:nth-child(2) { 
+        @media @tablet {
+            margin-top: 0;
+        }
+    }
+    .signupform__button {
+        color: #ffffff;
+        margin-left: 10px;
+        &:hover {
+            background-color: @color__button--background--hover;
+        }
+        @media @mobile {
+            padding: 0 25px!important;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        position: relative;
+        width: 100%;
+        p, a, h1, h2, h3, h4, .social-social-link  {
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+    }
 	// Reset Twitter feed styles
 	.twitter-feed {
 		padding: 0;
@@ -42,8 +99,9 @@
 
 
 
+
 // -----------------------------
-// 3. #Forms
+// 2. #Forms
 // -----------------------------
 
 // Form
@@ -71,8 +129,7 @@ form, .form {
 
 .signupform__input,
 .signupform__input,
-.blogsearch__input,
-.ecomproductslist__input  {
+.blogsearch__input {
     border: 1px solid @color-swatch7!important;
     border-radius: 20px;
     padding: 10px;
@@ -90,27 +147,6 @@ legend {
 .signupform__label {
     &:before {
         width: 130px;
-    }
-}
-
-.contactform__legend {
-    margin-bottom: 0;
-    @media @mobile {
-        text-align: center;
-        margin: 5px auto;
-    }
-    &:before {
-        width: 110px;
-    }
-}
-
-.contactform input[type="email"] {
-    padding: 6px 0;
-}
-
-.contactform__input {
-    @media @mobile {
-        text-align: center;
     }
 }
 
@@ -165,10 +201,10 @@ textarea,
 
 .signupform__form-group input.input[type=email] {
     border: 1px solid @color-swatch7!important;
+    border-radius: 5px;
 }
 
-.signupform__label, 
-.contactform__legend, 
+.signupform__label,
 .blogsearch__legend {
     background-color: transparent;
     border-bottom: 0;
@@ -261,9 +297,6 @@ textarea,
     @media @tablet {
         width: 100%;
     }
-    @media @mobile {
-        display: inline-block;
-    }
 }
 
 .signupform__form-group:nth-child(1) {
@@ -310,14 +343,6 @@ textarea,
     }
     @media @mobile {
         width: 100%;
-        text-align: center;
-    }
-}
-
-.signupform__button {
-    @media @mobile {
-        border: 1px solid @color-swatch7!important;
-        border-radius: 20px!important;
     }
 }
 
@@ -325,7 +350,7 @@ textarea,
 
 
 // -----------------------------
-// 4. #Buttons
+// 3. #Buttons
 // -----------------------------
 
 button,
@@ -342,10 +367,6 @@ button,
     }
 }
 
-
-
-
-// -----------------------------
 // Button Transitions
 // -----------------------------
 
