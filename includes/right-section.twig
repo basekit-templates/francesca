@@ -1,31 +1,46 @@
-<div class="right-section  container">
-
-    <header class="template-header">
-        <div class="header-container clearfix">
-            <div class="navigation-container">
-                <div class="logo-container">
-                    {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png'), "showTplWidget":"0"})|raw}}
-                </div>
-                <div class="companyname-container">
-                    {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
-                </div>
-            </div>
-            <div class="navigation-widget-profile">
-                {{widget('extendednavigation', 'extendednavigation', {"align":"right"})|raw}}
-            </div>
-        </div>
-    </header>
-
+<div class="right-section container">
 
     <!-- Page Content -->
     <section class="template-content">
 
-        <!-- Main Widet Zone -->
-        {{zone('main')|raw}}
+        <div class="companyname-container">
+            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+        </div>
+
+        <div class="headline-container">
+            {{widget('profile', 'headline', {
+                'profileType':'headline',
+                'twitter':'profile',
+                'refreshtime':'1800000'
+            })|raw}}
+        </div>
+
+        <div class="socialicons-container">
+            {{widget('profile', 'socialicons', {
+              'profileType':'socialicons',
+              'twitter':'profile',
+              'refreshtime':'1800000'
+            })|raw}}
+        </div>
+
+        <div class="companydescription-container">
+            {{widget('profile', 'companydescription', {
+              'profileType':'companydescription',
+              'twitter':'profile',
+              'refreshtime':'1800000'
+            })|raw}}
+        </div>
+
+        <div class="button-container">
+            {{widget('button', 'button', {
+                'text': 'View my portfolio'
+            })|raw}}
+        </div>
+
+
+        {% include "includes/footer.twig" %}
 
     </section>
     <!-- End Page Content -->
 
 </div>
-
-{% include "includes/footer.twig" %}
