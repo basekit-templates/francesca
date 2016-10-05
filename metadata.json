@@ -14,7 +14,7 @@
         "Swatch 1": {
             "color1":"#ffffff",
             "color2":"#000000",
-            "color3":"#253042",
+            "color3":"#c4aa82",
             "color4":"#253042",
             "color5":"#6c6c6c",
             "color6":"#ffffff",
@@ -204,15 +204,6 @@
             "font__button--line-height" : "@font-swatch7-line-height",
             "font__button--letter-spacing" : "@font-swatch7-letter-spacing"
         },
-        "navigation": {
-            "color__navigation--text": "@color__primary",
-            "color__navigation--text--hover": "@color__primary",
-            "font__navigation--font-family" : "@font-swatch6-font-family",
-            "font__navigation--font-size" : "@font-swatch6-font-size",
-            "font__navigation--font-weight" : "@font-swatch6-font-weight",
-            "font__navigation--line-height" : "@font-swatch6-line-height",
-            "font__navigation--letter-spacing" : "@font-swatch6-letter-spacing"
-        },
         "feature": {
             "color__feature-content--background" : "@color-swatch2",
             "color__feature-headline--text": "@font-swatch8-color",
@@ -258,8 +249,7 @@
         "ecommerce": {
             "color__ecomproductslist-product-title--text": "@color-swatch4",
             "color__ecomproduct-title--text": "@font-swatch4-color",
-            "color__ecomproduct-price--text": "@color__primary",
-            "color__ecombasket-button--background": "@color__button--background"
+            "color__ecomproduct-price--text": "@color__primary"
         }
     }
 }
