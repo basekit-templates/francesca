@@ -214,15 +214,56 @@
 // 10.  #Signup Form
 // -----------------------------
 
-.signupform__legend {
-    font-size: @font__h3--font-size;
-    text-align: left;
-    padding-bottom: 0;
-}
-
 .signupform__input {
     float: initial;
     height: 40px;
+}
+
+.signupform__form,
+.signupform__legend {
+    background-color: transparent;
+}
+
+.signupform__legend {
+    font-size: @font__h3--font-size;
+    text-align: left;
+    padding-bottom: 10px;
+    &:before {
+        border-bottom: 4px solid @color-swatch1;
+    }
+}
+
+.signupform__form-group {
+    margin-bottom: 0;
+}
+
+.signupform__form-group:nth-child(1) {
+    @media @tablet {
+        vertical-align: middle;
+        margin-top: 0;
+        float: initial;
+    }
+    @media @mobile {
+        width: 100%;
+        vertical-align: top;
+    }
+}
+
+.signupform__form-group:nth-child(2) { 
+    @media @tablet {
+        margin-top: 0;
+    }
+}
+
+.signupform__button {
+    color: #ffffff;
+    margin-left: 10px;
+    &:hover {
+        background-color: @color__button--background--hover;
+    }
+    @media @mobile {
+        padding: 0 25px!important;
+    }
 }
 
 
@@ -322,9 +363,7 @@
 
 // Content
 .twitter__avatar {
-    display: inline-block;
-    width: 70px;
-    margin-bottom: 10px;
+    display: none;
 }
 
 .twitter__account-link {
