@@ -30,7 +30,7 @@
 // 2. #Page Settings **
 // -----------------------------
 
-@bp-content:   ~"only screen and (max-width: 1024px)";
+@bp-content:   ~"only screen and (max-width: 1200px)";
 
 // Body
 // --------------
@@ -44,7 +44,7 @@ body {
 
 .container {
 	margin: 0 auto;
-    padding: 30px 80px;
+    padding: 30px 100px;
     @media @bp-content {
         padding: 30px 50px;
     }
@@ -143,6 +143,7 @@ body {
         color: @color__p--text;
         font-size: @font__p--font-size;
         font-family: @font__p--font-family;
+        line-height: @font__p--line-height;
     }
 }
 
