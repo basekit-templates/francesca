@@ -8,11 +8,7 @@
         </div>
 
         <div class="headline-container">
-            {{widget('profile', 'headline', {
-                'profileType':'headline',
-                'twitter':'profile',
-                'refreshtime':'1800000'
-            })|raw}}
+            {{ profile.headline }}
         </div>
 
         <div class="socialicons-container">
@@ -24,10 +20,8 @@
         </div>
 
         <div class="companydescription-container">
-            {{widget('profile', 'companydescription', {
-              'profileType':'companydescription',
-              'twitter':'profile',
-              'refreshtime':'1800000'
+            {{widget('content', 'content', {
+                content: '<p>Type content here...</p>'
             })|raw}}
         </div>
 
