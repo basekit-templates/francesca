@@ -203,7 +203,8 @@
             "font__button--letter-spacing" : "@font-swatch7-letter-spacing"
         },
         "feature": {
-            "color__feature-content--background" : "#000"
+            "color__feature-content--background" : "#000",
+            "color__feature-headline--text": "red"
         },
         "socialicons": {
             "color__socialicons--icon": "@color-swatch3",
