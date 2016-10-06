@@ -1,7 +1,7 @@
 {
     "name":"Francesca",
-    "thumbnail":"notes.png",
-    "screenshot":"notes-screenshot.jpg",
+    "thumbnail":"template.png",
+    "screenshot":"francesca-screenshot.jpg",
     "pageTypes":["home"],
     "templateType":"standard",
     "widgetVersion":2,
@@ -112,7 +112,7 @@
         "font7": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "16px",
-            "font-weight": "700",
+            "font-weight": "400",
             "line-height": "24px",
             "color": "@color-swatch2",
             "letter-spacing": "1px",
