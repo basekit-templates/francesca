@@ -85,13 +85,13 @@ body {
         width: 55% !important;
         height: 100vh!important;
         position: fixed!important;
+        @media @bp-content {
+            width: 50%!important;
+        }
         @media @tablet {
             position: absolute!important;
             width: 100%!important;
             height: 100%!important;
-        }
-        @media @bp-content {
-            width: 50%!important;
         }
     }
 }
