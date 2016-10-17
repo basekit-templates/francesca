@@ -3,7 +3,13 @@
 
     <div class="profile-widget-container">
 
+        <div class="profile-widget">
+
         {{widget('profile', 'email', { 'profileType':'email', 'email':'profile'})|raw}}
+
+        </div>
+
+        {{widget('profile', 'address', { 'profileType':'address', 'address':'profile'})|raw}}
 
     </div>
 
