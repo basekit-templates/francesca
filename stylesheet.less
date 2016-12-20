@@ -132,9 +132,11 @@ body {
         width: 100%;
         margin-left: 0;
         display: block;
-        background-color: #f2f2f2;
         height: inherit;
         min-height: inherit;
+    }
+    @media @mobile {
+        padding: 30px;
     }
 }
 
@@ -224,16 +226,6 @@ body {
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
-	@media @tablet {
-		position: relative;
-        margin-top: -100px;
-        background-color: @color__body--background;
-        padding: 40px;
-        z-index: 99991;
-	}
-    @media @mobile {
-        padding: 30px;
-    }
 }
 
 .widget--zone-widget {
