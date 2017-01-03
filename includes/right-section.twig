@@ -8,9 +8,7 @@
         </div>
 
         <div class="headline-container">
-            {{widget('content', 'content-h2', {
-                content: '<h2>FLOWER SHOP OWNER</h2>'
-            })|raw}}
+           {{widget('profile', 'strapline', { 'profileType':'strapline', 'strapline':'profile'})|raw}}
         </div>
 
         <div class="socialicons-container">
@@ -22,14 +20,12 @@
         </div>
 
         <div class="companydescription-container">
-            {{widget('content', 'content-p', {
-                content: '<p>Type content here...</p>'
-            })|raw}}
+            {{widget('profile', 'companydescription', { 'profileType':'companydescription', 'companydescription':'profile'})|raw}}
         </div>
 
         <div class="button-container">
-            {{widget('button', 'button', {
-                'text': 'View My Portfolio'
+            {{widget('button', 'bioButton', {
+                'text': 'Lorem Ipsum'
             })|raw}}
         </div>
 
